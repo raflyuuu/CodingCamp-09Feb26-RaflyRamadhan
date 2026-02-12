@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>My Website</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header>
+    <div class="logo">
+    <img src="https://storage.googleapis.com/danacita-website-v3-prd/website_v3/images/Logo-RevoU-5_1.original.png" alt="Logo RevoU">
+</div>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="profile.html">Our Profile</a>
+        <a href="#">Portfolio</a>
+        <a href="#message">Message Us</a>
+    </nav>
+</header>
+
+<section class="hero">
+    <h1>Hi <span id="userName">Name</span>, Welcome To Website</h1>
+    <p>Ini adalah website latihan pertama</p>
+</section>
+
+<section class="headquarter">
+    <h2>Our Headquarter</h2>
+    <div class="hq-container">
+        <div class="hq-item">
+            <div class="circle"></div>
+            <p>Jakarta</p>
+        </div>
+        <div class="hq-item">
+            <div class="circle"></div>
+            <p>Bandung</p>
+        </div>
+        <div class="hq-item">
+            <div class="circle"></div>
+            <p>Surabaya</p>
+        </div>
+    </div>
+</section>
+
+<section id="message" class="message">
+    <h2>Message Us</h2>
+    <div class="message-container">
+        <form id="messageForm">
+            <label>Nama:</label>
+            <input type="text" id="nama">
+
+            <label>Tanggal Lahir:</label>
+            <input type="date" id="tanggal">
+
+            <label>Jenis Kelamin:</label>
+            <div class="gender">
+                <input type="radio" name="gender" value="Laki-Laki"> Laki-Laki
+                <input type="radio" name="gender" value="Perempuan"> Perempuan
+            </div>
+
+            <label>Pesan:</label>
+            <textarea id="pesan"></textarea>
+
+            <button type="submit">Submit</button>
+        </form>
+
+        <div class="result">
+            <h4>Hasil:</h4>
+            <p id="resultOutput"></p>
+        </div>
+    </div>
+</section>
+
+<footer>
+    <p>Created By Rafly Ramadhan</p>
+</footer>
+
+<script src="js/script.js"></script>
+</body>
+</html>
